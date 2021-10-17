@@ -30,6 +30,7 @@ export default function Header({ className }) {
         <Button className="donate__btn" variant="secondary" arial-label="Get started">
           GET STARTED
         </Button>
+        <MobileDrawer></MobileDrawer>
       </Container>
     </header>
   );
