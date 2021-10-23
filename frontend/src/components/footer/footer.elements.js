@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaMagento } from "react-icons/fa";
 export const FooterContainer = styled.div`
 background-color:#1015522;
 padding:4rem 0 2rem 0;
@@ -128,3 +129,60 @@ color:#fff
     transaction:0.3s ease-out;
 }
 `;
+
+export const SocialMedia = styled.section`
+max-widht:1000px;
+width:100%;
+
+`
+    ;
+
+export const SocialMediaWrapp = styled.div`
+display: flex
+justify-content:space-between;
+align-items:center;
+width:90%;
+max-width:1000px;
+margin:40px auto 0 auto;
+@media screen and (max-width:820px){
+    flex-direction:column;
+}
+`;
+
+export const SocialLogo = styled(Link)`
+color:black;
+justify-self:start;
+cursor:pointer;
+text-decoration:none;
+font-size:2rem;
+display:flex;
+align-items:center;
+margin-bottom:16pxl
+
+`
+
+export const SocialIcon = styled(FaMagento)`
+margin-right:10px;
+
+
+`
+
+export const WebsiteRights = styled.small`
+color:black;
+margin-right:10px;
+
+
+`
+export const SocialIcons = styled(FaMagento)`
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-right:10px;
+width:240px;
+
+`
+export const SocialIconLink = styled.a`
+color:black;
+font-size:24px;
+
+`

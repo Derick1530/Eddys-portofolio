@@ -3,6 +3,7 @@ import React from 'react';
 // import { RiTwitterFill } from 'react-icons/ri';
 // import { BsInstagram } from 'react-icons/bs';
 // import { BsFacebook } from 'react-icons/bs';
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLink, FaLinkedin } from "react-icons/fa";
 
 import {
     FooterContainer,
@@ -16,7 +17,14 @@ import {
     FooterLinkItems,
     FooterLink,
     FooterLinkTitle,
-    Button
+    Button,
+    SocialMedia,
+    SocialIconLink,
+    SocialMediaWrapp,
+    SocialIcons,
+    SocialLogo,
+    SocialIcon,
+    WebsiteRights,
 }
     from './footer.elements'
 
@@ -55,6 +63,8 @@ const Footer = () => {
                         <FooterLink to={'/'}>Investors</FooterLink>
 
                     </FooterLinkItems>
+                </FooterLinksWrapper >
+                <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>About us</FooterLinkTitle>
                         <FooterLink to={'/'}>Testimal</FooterLink>
@@ -73,7 +83,35 @@ const Footer = () => {
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
+            <SocialMedia>
+                <SocialMediaWrapp>
+                    <SocialLogo to="/">
+                        <SocialIcon />
+                        DERICK
+                    </SocialLogo>
+                    <WebsiteRights>Derick 2021 </WebsiteRights>
+                    <SocialIcons>
+                        <SocialIconLink href='/' target="_blank" arial-label="Facebook">
+                            <FaFacebook />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target="_blank" arial-label="Instagram">
+                            <FaFacebook />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target="_blank" arial-label="youtube">
+                            <FaInstagram />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target="_blank" arial-label="Twitter">
+                            <FaTwitter />
+                        </SocialIconLink>
+                        <SocialIconLink href='/' target="_blank" arial-label="LinkedIn">
+                            <FaLinkedin />
+                        </SocialIconLink>
+
+                    </SocialIcons>
+                </SocialMediaWrapp>
+            </SocialMedia>
         </FooterContainer>
+
 
     )
 }
