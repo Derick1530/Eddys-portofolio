@@ -1,69 +1,13 @@
 import React, { useState } from 'react';
-import styled, { css } from "styled-components/macro";
 import Fade from 'react-reveal/Fade';
-import { Link } from "react-router-dom"
 import { menuData } from '../../data/menuData';
-import { Button } from '../Button';
-import { FaBars } from 'react-icons/fa';
+import { Button } from '../../globalStyles';
+import {
+    Nav, NavLink, Logo, NavMenuLinks, NavBtn, MenuBars, NavMenu
 
-const Nav = styled.nav`
-    height:60px;
-    display: flex;
-    transition:0.4s;
-    background:${({ isScroll }) => (isScroll ? '#0467FB' : 'transparent')};
-    justify-content:space-between;
-    padding:1rem 2rem;
-    z-index:100;
-    position:fixed;
-    width:100%;
-    @media screen and (max-width:768px){
-        background:${({ isScroll }) => (isScroll ? '#0467FB' : 'transparent')};
-    }
-`;
+} from "./navbar.element"
 
-const NavLink = css`
-color:white;
-display:flex;
-align-items:center;
-height:100%;
-cursor:pointer;
-text-decoration:none;
-padding: 0 1rem;
-`
 
-const Logo = styled(Link)`
-${NavLink}
-color:white;
-font-style:italic;
-`
-const NavMenuLinks = styled(Link)`
-${NavLink}
-
-`;
-const NavBtn = styled.div`
-display:flex;
-align-items:center;
-margin-right:24px;
-@media screen and (max-width:768px){
-    display:none;
-`;
-const MenuBars = styled(FaBars)`
-display:none;
-cursor:pointer;
-
-@media screen and (max-width:768px){
-    display:block;
-}
-`;
-const NavMenu = styled.div`
-display:flex;
-align-items:center;
-margin-right: -48px;
-
-@media screen and (max-width:768px){
-    display:none;
-}
-`;
 const Navbar = ({ toggle }) => {
     const [isScroll, setisScroll] = useState(false);
     const changeBackground = () => {
@@ -92,7 +36,6 @@ const Navbar = ({ toggle }) => {
             <NavBtn>
                 <Button to="/contact" primary='true'>
                     <Fade bottom>
-
                         Contact Us
                     </Fade>
 

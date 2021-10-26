@@ -1,30 +1,18 @@
 import React from 'react';
-
+import img from '../../images/footer.png'
 // import { RiTwitterFill } from 'react-icons/ri';
 // import { BsInstagram } from 'react-icons/bs';
 // import { BsFacebook } from 'react-icons/bs';
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLink, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 import {
     FooterContainer,
-    FooterSubHeading,
-    FooterSubscribe,
-    FooterSubText,
-    FormInput,
     FooterLinksContainer,
     FooterLinksWrapper,
-    Form,
     FooterLinkItems,
     FooterLink,
     FooterLinkTitle,
-    Button,
-    SocialMedia,
-    SocialIconLink,
-    SocialMediaWrapp,
-    SocialIcons,
-    SocialLogo,
-    SocialIcon,
-    WebsiteRights,
+    FooterLinkItemsContact,
 }
     from './footer.elements'
 
@@ -33,83 +21,40 @@ import {
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterSubscribe>
-                <FooterSubHeading>
-                    The following is the stress test for the chosen effect. A 100 paragraphs of lorem ipsum text will be revealed as you scroll down. To reset the test select an option from the button toolbar above. The following whitespace is intentionally left blank. Scroll down to begin stress test.
-                </FooterSubHeading>
-                <FooterSubText>
-                    <Form>
-                        <FormInput name="email" type="email" placeholder="Your Email" />
-                        <Button fontBig>Subscribe</Button>
-
-                    </Form>
-                </FooterSubText>
-            </FooterSubscribe>
             <FooterLinksContainer>
+                <FooterLinkItems>
+                    <FooterLinkTitle>Navigation</FooterLinkTitle>
+                    <FooterLink to={'/'}>Home</FooterLink>
+                    <FooterLink to={'/'}>About</FooterLink>
+                    <FooterLink to={'/'}>Service</FooterLink>
+                    <FooterLink to={'/'}>Gallery</FooterLink>
+
+                </FooterLinkItems>
+
+
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to={'/'}>Testimal</FooterLink>
-                        <FooterLink to={'/'}></FooterLink>
-                        <FooterLink to={'/'}>Carres</FooterLink>
-                        <FooterLink to={'/'}>Investors</FooterLink>
+                        <FooterLinkTitle>Contacts</FooterLinkTitle>
+                        <FooterLink to={'/'}>Network</FooterLink>
+                        <FooterLink to={'/'}>Our Members</FooterLink>
+                        <FooterLink to={'/'}>Communities</FooterLink>
+                        <FooterLink to={'/'}>Project</FooterLink>
 
                     </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                        <FooterLink to={'/'}>Testimal</FooterLink>
-                        <FooterLink to={'/'}></FooterLink>
-                        <FooterLink to={'/'}>Carres</FooterLink>
-                        <FooterLink to={'/'}>Investors</FooterLink>
 
-                    </FooterLinkItems>
+
+                    <FooterLinkItemsContact>
+                        <h1>+2567594042</h1>
+                        <p>Konge Kalonge Supermaket/Kampala Uganda</p>
+                        <p>derickzihalirwa07@gmail.com</p>
+
+
+
+                    </FooterLinkItemsContact>
                 </FooterLinksWrapper >
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to={'/'}>Testimal</FooterLink>
-                        <FooterLink to={'/'}></FooterLink>
-                        <FooterLink to={'/'}>Carres</FooterLink>
-                        <FooterLink to={'/'}>Investors</FooterLink>
 
-                    </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>Social Media</FooterLinkTitle>
-                        <FooterLink to={'/'}>Testimal</FooterLink>
-                        <FooterLink to={'/'}></FooterLink>
-                        <FooterLink to={'/'}>Carres</FooterLink>
-                        <FooterLink to={'/'}>Investors</FooterLink>
-
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
             </FooterLinksContainer>
-            <SocialMedia>
-                <SocialMediaWrapp>
-                    <SocialLogo to="/">
-                        <SocialIcon />
-                        DERICK
-                    </SocialLogo>
-                    <WebsiteRights>Derick 2021 </WebsiteRights>
-                    <SocialIcons>
-                        <SocialIconLink href='/' target="_blank" arial-label="Facebook">
-                            <FaFacebook />
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target="_blank" arial-label="Instagram">
-                            <FaFacebook />
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target="_blank" arial-label="youtube">
-                            <FaInstagram />
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target="_blank" arial-label="Twitter">
-                            <FaTwitter />
-                        </SocialIconLink>
-                        <SocialIconLink href='/' target="_blank" arial-label="LinkedIn">
-                            <FaLinkedin />
-                        </SocialIconLink>
-
-                    </SocialIcons>
-                </SocialMediaWrapp>
-            </SocialMedia>
+            <img src={img} alt="footer" />
         </FooterContainer>
 
 

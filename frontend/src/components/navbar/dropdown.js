@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { menuData } from '../../data/menuData';
-import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 import { FaTimes } from "react-icons/fa";
 
@@ -10,14 +9,14 @@ position:fixed;
 z-index:999;
 width:100%;
 height:100%;
-background:#cd853f;
-display:${({ isOpen }) => (isOpen ? 'grid' : 'none')};
+background:#333333;
+display:grid;
 align-items:center;
 top:0;
-left:0;
-transaction:0.10s ease-in-out;
-opacity:${({ isOpen }) => (isOpen ? '1' : '0')};
-top:0
+left:${({ isOpen }) => (isOpen ? '0' : '-100%')};
+transition: all 0.1s ease;
+opacity:1;
+top:0;
 `;
 
 const Icon = styled.div`
@@ -32,38 +31,37 @@ outline:none;
 `;
 
 const CloseIcon = styled(FaTimes)`
-color:#000dla;
+color:#000d1a;
 `;
 const DropdownWrapper = styled.div``;
 const DropdownMenu = styled.div`
 display:grid; 
 grid-template-columns:1fr;
-grid-template-rows: repeat(4,80px);
+grid-template-rows: repeat(5,80px);
 text-align:center;
 margin-bottom:4rem;
 @media screen and (max-width:480px){
-    grid-template-rows: repeat(4,60px);
+    grid-template-rows: repeat(5,60px);
     
 }
 `;
 const DropdownLink = styled(Link)`
-display:flex,
+display:flex;
+width: 50%;
+margin:0 auto;
+padding-top:12px;
 color: #fff;
 justify-content:center;
-aligns-items:center;
+align-items:center;
 text-decoration:none;
 list-style:none;
 color:#fff;
 cursor:pointer;
-transaction:0.2s ease-in-out;
+transition:0.9s ease-in-out;
 
 &:hover {
     color: #000d1a;
 }
-`;
-const BtnWrap = styled.div`
-display:flex;
-justify-content:center;
 `;
 
 
@@ -82,11 +80,7 @@ const Dropdown = ({ isOpen, toggle }) => {
                         </DropdownLink>
                     ))}
                 </DropdownMenu>
-                <BtnWrap>
-                    <Button primary="true" round="true" big="true" to="/contact">
-                        Contact Us
-                    </Button>
-                </BtnWrap>
+
             </DropdownWrapper>
 
         </DropdownContainer>

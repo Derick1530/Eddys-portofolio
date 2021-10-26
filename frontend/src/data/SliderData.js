@@ -1,59 +1,35 @@
-import ImageOne from "../images/1.jpg";
-import ImageTwo from "../images/2.jpg";
-import ImageThree from "../images/4.jpg";
-import ImageFour from "../images/5.jpg";
+import ImageOne from "../images/img.jpg";
+import ImageTwo from "../images/img1.jpg";
+import ImageThree from "../images/img2.jpg";
+import ImageFour from "../images/img3.jpg";
 
 export const SliderData = [
     {
         title: "Luxury Villa in Ball, Indonesia",
-        price: '$4,200,000',
-        path: '/',
+        description: 'As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge.Our skilled experts are able to resolve complex and unusual cases in the shortest time.',
         label: 'View Home',
         image: ImageOne,
         alt: 'House'
     },
     {
         title: "Luxury Villa in Ball, Indonesia",
-        price: '$4,200,000',
-        path: '/',
+        description: 'As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge.Our skilled experts are able to resolve complex and unusual cases in the shortest time.',
         label: 'View Home',
         image: ImageTwo,
         alt: 'House'
     },
     {
         title: "Luxury Villa in Ball, Indonesia",
-        price: '$4,200,000',
-        path: '/',
+        description: 'As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge.Our skilled experts are able to resolve complex and unusual cases in the shortest time.',
         label: 'View Home',
         image: ImageThree,
         alt: 'House'
     },
     {
         title: "Luxury Villa in Ball, Indonesia",
-        price: '$4,200,000',
-        path: '/',
+        description: 'As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge.Our skilled experts are able to resolve complex and unusual cases in the shortest time.',
         label: 'View Home',
         image: ImageFour,
         alt: 'House'
     },
 ];
-
-// export SliderDataTwo = [
-//     {
-//         title: "Luxury Villa in Ball, Indonesia",
-//         price: '$4,200,000',
-//         path: '/',
-//         label: 'View Home',
-//         image: ImageFour,
-//         alt: 'House'
-//     },
-//     {
-//         title: "Luxury Villa in Ball, Indonesia",
-//         price: '$4,200,000',
-//         path: '/',
-//         label: 'View Home',
-//         image: ImageFour,
-//         alt: 'House'
-//     },
-
-// ]
