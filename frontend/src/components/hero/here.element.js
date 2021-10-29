@@ -64,13 +64,13 @@ width: 90%;
 justify-content: center;
 align-items: center;
 z-index:10;
-border:1px solid black;
 /* height: 40vh; */
 max-width:1600px;
 width:calc(100%-100px);
 color:#fff;
 h1 {
     width: 80%;
+    font-family: 'Oswald', sans-serif;
     font-size: clamp(0.3rem,8vw,4rem);
     font-weight: 400;
     text-transform:uppercase;
@@ -80,6 +80,7 @@ h1 {
 
 };
 p{
+    
     text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
     font-size: clamp(1rem,1vw,2rem);
 };

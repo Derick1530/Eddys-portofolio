@@ -1,32 +1,34 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
 z-index: 100;
 width: 80%;
 margin: 0 auto;
+height: 100vh;
+background-color: #F1EFEE;
 `;
 export const ContainerWrapper = styled.div`
-
-display: flex;
-flex-direction: row;
 @media screen and (max-width:986px){
-  flex-direction: column ;
+  
 }
 `;
 
 export const CardWrapper = styled.div`
-
 `;
 
 export const Card = styled.div`
+width: 100%;
+height: 100%;
 margin: 12px;
 box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
 padding: 33px;
 
 p{ 
+  font-family: 'Josefin Sans', sans-serif;
     word-wrap: break-word;
     margin-top: 10px;
-    font-weight: 200;
     margin-bottom: 20px;
 
     text-overflow: clip;
@@ -39,7 +41,7 @@ p{
 
 `;
 export const ImageContainer = styled.div`
-width: 140px;
+width: 80px;
 margin:0 auto;
 margin-bottom: 2rem ;
 border-bottom: 4px solid rgba(0,0,0,0.2);
@@ -49,7 +51,7 @@ border-bottom: 4px solid rgba(0,0,0,0.2);
 `;
 export const Image = styled.img`
 width: 100%;
-height: 9rem;
+height: 5rem;
 border-radius: 50%;
 object-fit:cover;
 @media screen and (max-width:986px){
@@ -66,9 +68,10 @@ height: 4rem;
 `;
 
 export const Details = styled.div`
-border-top: rgba(0,0,0,0.2) 2px solid;
+
 padding-top: 12px;
 h2{
+  font-family: 'Cinzel', serif;
     white-space: nowrap; 
     font-size: 23px;
     font-weight: 500;
@@ -80,8 +83,7 @@ h2{
 }
 p{
     white-space: nowrap; 
-    
-    font-weight: 300;
+    font-family: 'Cinzel', serif;
     margin-bottom: 20px;
     text-overflow: clip;
     @media screen and (max-width:986px){

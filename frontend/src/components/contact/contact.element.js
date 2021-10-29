@@ -5,7 +5,7 @@ width: 80%;
 margin:0 auto;
 justify-content: center;
 background-color:  #bdb8b2;
-border-radius:20px;
+
 flex-direction: column;
 color:#fff;
 @media screen and (max-width: 960px){

@@ -4,6 +4,7 @@ export const Container = styled.section`
 width: 100%;
 padding:30px;
 
+
 `;
 
 export const WrappeElement = styled.div`
@@ -30,19 +31,21 @@ width: 99%;
 
 export const Title = styled.div`
 text-align: center;
-
+color:#4d4d4dde;
 h1{
+    font-family: 'Cinzel', serif;
+font-family: 'Josefin Sans', sans-serif;
     font-size: 60px;
     margin-top: 12px;
     font-weight: 800;
     margin-bottom: 20px;
     @media screen and (max-width:768px){
-    font-size: 20px;
+    font-size: 24px;
     };
     
 };
 p{
-    font-weight: 300;
+    font-family: 'Hind Siliguri', sans-serif;
 };
 
 
@@ -67,22 +70,24 @@ height: 50px;
 `;
 export const Detail = styled.div`
 width: 100%;
+color:#4d4d4dde;
 
 padding:9px;
 
 h1{
-
     
+    font-family: 'Cinzel', serif;
+
     @media screen and (max-width:768px){
         font-size: 16px;
         font-weight:300;
     }
 };
 p{
+    font-family: 'Hind Siliguri', sans-serif;
     font-size: 14px;
-    font-weight:300;
     padding-top: 22px;
-    line-height: 1.3;
+
     @media screen and (max-width:768px){      
 font-size: 12px;
 font-weight:300;

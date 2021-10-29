@@ -5,7 +5,6 @@ const GlobalStyles = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
 }
 html,body{
     background-color:#f5f4f2;
@@ -19,7 +18,7 @@ html,body{
     align-items: center;
     justify-content: center;
     z-index: 2;
-    background-color:#2C271C;
+
     @media screen and (max-width:786px){
         width: 20px;
         height: 50px;
@@ -46,30 +45,53 @@ html,body{
 }
 .custom-indictor {
     bottom: -45px;
-    
+
 }
 .custom-indictor:hover{
 border:1px solid black;
 }
 
-
-
-`;
-
-export const Container = styled.div`
-width:100%;
-max-width:1000px;
-z-index:1;
-margin-right:50px;
-margin-left:auto;
-padding-right:50px;
-padding-left:50px;
-
-@media screen and(max-width:991px){
-    padding-right:20px;
-    padding-left:30px;
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
 }
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+
 `;
+
+
+// export const Container = styled.div`
+// width:100%;
+// max-width:1000px;
+// z-index:1;
+// margin-right:50px;
+// margin-left:auto;
+// padding-right:50px;
+// padding-left:50px;
+
+// @media screen and(max-width:991px){
+//     padding-right:20px;
+//     padding-left:30px;
+// }
+// `;
 
 export const Button = styled(Link)`
 background: ${({ primary }) => (primary ? '#000d1a' : 'CD853F')};
@@ -91,5 +113,6 @@ font-size: ${({ big }) => (big ? ' 20px' : '14px')};
     transform:translateY(-2px);
 }
 `;
+
 
 export default GlobalStyles

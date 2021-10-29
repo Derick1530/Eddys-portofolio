@@ -25,9 +25,9 @@ const Footer = () => {
                 <FooterLinkItems>
                     <FooterLinkTitle>Navigation</FooterLinkTitle>
                     <FooterLink to={'/'}>Home</FooterLink>
-                    <FooterLink to={'/'}>About</FooterLink>
+                    <FooterLink to={'/about'}>About</FooterLink>
                     <FooterLink to={'/'}>Service</FooterLink>
-                    <FooterLink to={'/'}>Gallery</FooterLink>
+                    <FooterLink to={'/gallery'}>Gallery</FooterLink>
 
                 </FooterLinkItems>
 

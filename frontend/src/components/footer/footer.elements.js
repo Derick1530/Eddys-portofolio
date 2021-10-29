@@ -5,7 +5,7 @@ import { FaMagento } from "react-icons/fa";
 
 export const FooterContainer = styled.div`
 
-background-color:#e7e7e7;
+background-color:#7B6757;
 position: relative;
 padding:2rem 0 1rem 0;
 display:flex;
@@ -49,7 +49,6 @@ display:flex;
 
 export const FooterLinkItems = styled.div`
 display:flex;
-border:1px solid red;
 
 width: 100%;
 flex-direction: column;
@@ -70,12 +69,12 @@ color:#fff;
 `;
 export const FooterLinkItemsContact = styled.div`
 width: 100%;
-text-align: right;
+text-align: left;
 /* justify-content: flex-end; */
 margin-left: 22px;
 
 h1{
-    
+    font-family: 'Cinzel', serif;
     @media screen and (max-width: 820px){
         
         margin-top: 2rem;
@@ -86,9 +85,11 @@ h1{
 p{
     margin-top: 3rem;
     font-size: 25px;
+  color: #ebe5e5de;
+
     @media screen and (max-width: 820px){
-        margin-top: 2rem;
-        font-size: 16px;
+        margin-top: 1rem;
+        font-size: 12px;
         
 
     }
@@ -103,19 +104,22 @@ p{
 `
 
 export const FooterLinkTitle = styled.h2`
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Cinzel', serif;
+color: #4d4d4dde;
 margin-bottom:16px;
 color:black;
 
 font-size: 30px;
 @media screen and (max-width:768px){
-    font-size:27px;
+    font-size:20px;
 }
 `
 
 export const FooterLink = styled(Link)`
+font-family: 'Josefin Sans', sans-serif;
 text-decoration:none;
 font-size: 34px;
-border:1px solid red;
 margin-bottom:0.5rem;
 color:#fff;
 &:hover{
@@ -123,7 +127,7 @@ color:#fff;
     transition:0.3s ease-out;
 }
 @media screen and (max-width:768px){
-    font-size:27px;
+    font-size:20px;
 }
 `;
 

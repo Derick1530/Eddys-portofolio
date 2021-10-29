@@ -21,7 +21,7 @@ const Services = ({ names, title, titleDesc }) => {
                         <ElementContainer key={index}>
                             <Element >
                                 <Log>
-                                    <Image src={item} alt={item.alt} />
+                                    <Image src={item.image} alt={item.alt} />
                                 </Log>
                                 <Detail>
                                     <h1>{item.elementTitle}</h1>

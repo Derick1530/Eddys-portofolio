@@ -17,7 +17,7 @@ export const service = [
     {
         title: 'our Services',
         titleDesc: 'Steps That We Did',
-        elementTitle: 'Architecture',
+        elementTitle: 'Design',
         description: 'A box-shadow CSS generator that helps you quickly generate box-shadow CSS elp easily get fonts at Font Keyboard iOS app and Font Keyboard Android app.',
         image: imageTree,
         alt: 'Image',
