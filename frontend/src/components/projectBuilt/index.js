@@ -1,6 +1,5 @@
 import React from 'react'
 import Slider from "react-slick";
-import "../../slider.css";
 import { SliderContainer, Container, Image, ContainerElement, Foward, Next } from "./projectBuild.element"
 
 const ProjectBuilt = ({ derick, data }) => {

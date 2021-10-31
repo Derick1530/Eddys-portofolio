@@ -9,19 +9,17 @@ import { DataImage } from "./data/about";
 import Gallery from "./components/gallery";
 import NavbarActivity from "./components/navbar";
 import Footer from "./components/footer";
-import Contact from "./components/contact";
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <NavbarActivity />
+
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about">
           <About data={DataImage} />
         </Route>
         <Route path="/gallery" component={Gallery} />
-        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </BrowserRouter>

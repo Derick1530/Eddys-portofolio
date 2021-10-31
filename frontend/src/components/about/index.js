@@ -64,43 +64,36 @@ const About = ({ data }) => {
 
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>Collapsible Group Item #1</Typography>
+                    <Typography>What is usually needed for a project? </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                    <Typography>Collapsible Group Item #2</Typography>
+                    <Typography>Who will be on our project?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                    <Typography>Collapsible Group Item #3</Typography>
+                    <Typography>Can we offer own design?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+
+                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
+
         </div>
     );
 }

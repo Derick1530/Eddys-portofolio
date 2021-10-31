@@ -10,7 +10,7 @@ const Services = ({ names, title, titleDesc }) => {
             <ElementCom>
                 <Title>
                     <p>{title}</p>
-                    <h1>{titleDesc}</h1>
+                    <h1>Service that we provide</h1>
 
                 </Title>
                 <WrappeElement>

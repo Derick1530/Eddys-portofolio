@@ -1,7 +1,7 @@
 import image1 from "../images/slider01.jpg"
 import image2 from "../images/slider02.jpg"
 import image3 from "../images/slider03.jpg"
-import image4 from "../images/slider04.jpg"
+import image4 from "../images/Mask-1.jpg"
 
 import bed from "../images/bed.jpg"
 import chair from "../images/chair.jpg"

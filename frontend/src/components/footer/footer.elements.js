@@ -1,191 +1,202 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { FaMagento } from "react-icons/fa";
+import styled from "styled-components"
+
+export const FooterWrapper = styled.section`
+background-color: #7b6757;
+	width: 100%;
+  max-width: 1040px;
+  padding: 2rem 48px 40px;
+  margin: 1rem auto;
+  box-sizing: content-box;
 
 
-export const FooterContainer = styled.div`
-
-background-color:#7B6757;
-position: relative;
-padding:2rem 0 1rem 0;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items: center;
-img{
-position: absolute;
-    width: 100%;
-    z-index: 0;
-    height: 34vh;
-    bottom: 0;
-    opacity: 0.1;
-    object-fit: cover;
-}
-`;
-
-export const FooterLinksContainer = styled.div`
-width:70%;
-max-width:1500px;
-margin:0 auto;
-z-index:11;
-display:flex;
-justify-content:space-around;
-
-@media screen and (max-width: 820px){
-    display: inline;
-    bottom: 5rem;
-    flex-direction: row-reverse;
-    width: 100%;
-}
-
+  @media screen and (max-width: 640px) {
+    padding: 0 16px 48px;
+    width: calc(100vw - 32px);
+  }
 `
 
-export const FooterLinksWrapper = styled.div`
-display:flex;
-@media screen and (max-width:820px){
-    flex-direction:row;
-};
-`;
+export const LinkItem = styled.a`
+	font-size: 20px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 16px;
+	transition: .3s ease;
+	position: relative;
+    text-decoration: none;
+	left: 0;
 
-export const FooterLinkItems = styled.div`
-display:flex;
+	&:hover {
+		color: #fff;
+		left: 6px;
+	}
 
-width: 100%;
-flex-direction: column;
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		line-height: 28px;
+		display: flex;
+	}
 
-align-items: center;
-margin:16px;
-text-align:left;
-box-sizing:border-box;
-color:#fff;
-
-
-@media screen and (max-width:989px){
-    margin:0;
-    padding:10px;
-    width:100%;
-}
-
-`;
-export const FooterLinkItemsContact = styled.div`
-width: 100%;
-text-align: left;
-/* justify-content: flex-end; */
-margin-left: 22px;
-
-h1{
-    font-family: 'Cinzel', serif;
-    @media screen and (max-width: 820px){
-        
-        margin-top: 2rem;
-        font-size: 20px;
-    
-};
-}
-p{
-    margin-top: 3rem;
-    font-size: 25px;
-  color: #ebe5e5de;
-
-    @media screen and (max-width: 820px){
-        margin-top: 1rem;
-        font-size: 12px;
-        
-
-    }
-}
-
-@media screen and (max-width: 820px){
-    display: inline;
-    width: 100%;
-    text-align:left;
-    
-}
+	@media screen and (max-width: 640px) {
+		font-size: 16px;
+		line-height: 14px;
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+	}
 `
 
-export const FooterLinkTitle = styled.h2`
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Cinzel', serif;
-color: #4d4d4dde;
-margin-bottom:16px;
-color:black;
-
-font-size: 30px;
-@media screen and (max-width:768px){
-    font-size:20px;
-}
-`
-
-export const FooterLink = styled(Link)`
-font-family: 'Josefin Sans', sans-serif;
-text-decoration:none;
-font-size: 34px;
-margin-bottom:0.5rem;
-color:#fff;
-&:hover{
-    color:#0467fb;
-    transition:0.3s ease-out;
-}
-@media screen and (max-width:768px){
-    font-size:20px;
-}
-`;
-
-export const SocialMedia = styled.section`
-z-index:1;
-width:100%;
-bottom: 0;
-`
-    ;
-
-export const SocialMediaWrapp = styled.div`
+export const SocialIconsContainer = styled.div`
+max-width: 1040px;
 display: flex;
-justify-content:space-between;
-align-items:center;
-width:90%;
+justify-content: space-between;
 
-padding-top:9px;
-background:#2C271C;
-margin:10px auto 0 auto;
-@media screen and (max-width:820px){
-
+@media screen and (max-width: 768px){
+  display: flex;
+  justify-content: space-between;
 }
-`;
 
-export const SocialLogo = styled(Link)`
-color:white;
-justify-self:start;
-cursor:pointer;
-text-decoration:none;
-font-size:1rem;
-display:flex;
-
-align-items:center;
-margin-bottom:16px;
-padding: 0 12px 0 12px;
-
-`;
-
-export const SocialIcon = styled(FaMagento)`
-margin-right:10px;
-
-
-`;
-export const SocialIcons = styled.div`
-display:flex;
-justify-content:space-between;
-align-items:center;
-width:240px;
-padding: 0 12px 0 12px;
-border-radius: 12px;
-@media screen and (max-width:820px){
-    width:100%;
-    justify-content:space-around;
-    padding: 12px;
- }
-
+@media screen and (max-width: 640px){
+  display: flex;
+	width: 100%;
+  flex-direction: column;
+}
 `
-export const SocialIconLink = styled.a`
-color:white;
-font-size:24px;
+
+export const CompanyContainer = styled.div`
+  display: flex;
+	align-items:baseline;
+	flex-wrap: wrap;
+	margin-right: auto;
+	
+
+	@media screen and (max-width: 768px){
+		flex-direction: column;
+		align-items: baseline;
+	}
+
+	@media screen and (max-width: 640px){
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 32px;
+		align-items: center;
+	}
+`
+
+
+export const Slogan = styled.p`
+	color: rgba(255, 255, 255, 0.5);
+	min-width: 280px;
+	letter-spacing: 0.02em;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 1rem;
+
+	@media screen and (max-width: 768px){
+		font-size: 16px;
+		/* line-height: 28px; */
+	}
+
+	@media screen and (max-width: 640px){
+		line-height: 22px;
+		font-size: 14px;
+		min-width: 100px;
+	}
+`
+
+export const SocialContainer = styled.div`
+	display: flex;
+  align-items: center;
+
+	@media screen and (max-width: 768px){
+		justify-content: center;
+		padding-right: 16px;
+		flex-wrap: wrap;
+	}
+`
+
+
+export const LinkList = styled.ul`
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+	grid-template-columns: repeat(3, minmax(85px, 220px));
+	gap: 40px;
+  padding: 40px 0 28px;
+
+	@media screen and (max-width: 1024px) {
+		padding: 32px 0 16px;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		padding: 32px 0 16px;
+		gap: 16px;
+	}
+	@media screen and (max-width: 640px) {
+		width: 100%;
+		padding: 32px 4px 16px;
+		gap: 5px;
+	}
+`
+
+export const LinkColumn = styled.div`
+	display: flex;
+	flex-direction: column;
+	max-width: 220px;
+	width: 100%;
+`
+export const PhoneNum = styled.h2`
+font-size: 20px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 16px;
+	transition: .3s ease;
+	position: relative;
+	left: 0;
+
+	&:hover {
+		color: #fff;
+		left: 6px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		line-height: 28px;
+		display: flex;
+	}
+
+	@media screen and (max-width: 640px) {
+		font-size: 16px;
+		line-height: 14px;
+		margin-bottom: 8px;
+		display: flex;
+		align-items: center;
+	}
+
+`;
+export const LinkTitle = styled.h4`
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 16px;
+
+	@media screen and (max-width: 640px) {
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 8px;
+	}
+`
+export const SocialIcons = styled.a`
+transition: 0.3s ease;
+color: white;
+border-radius: 50px;
+  padding: 8px;
+&:hover {
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
 `

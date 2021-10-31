@@ -1,64 +1,46 @@
 import React from 'react';
-import img from '../../images/footer.png'
-// import { RiTwitterFill } from 'react-icons/ri';
-// import { BsInstagram } from 'react-icons/bs';
-// import { BsFacebook } from 'react-icons/bs';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { AiOutlineInstagram, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai';
 
-import {
-    FooterContainer,
-    FooterLinksContainer,
-    FooterLinksWrapper,
-    FooterLinkItems,
-    FooterLink,
-    FooterLinkTitle,
-    FooterLinkItemsContact,
-}
-    from './footer.elements'
-
-
+import { CompanyContainer, PhoneNum, SocialIcons, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './footer.elements';
 
 const Footer = () => {
     return (
-        <FooterContainer>
-            <FooterLinksContainer>
-                <FooterLinkItems>
-                    <FooterLinkTitle>Navigation</FooterLinkTitle>
-                    <FooterLink to={'/'}>Home</FooterLink>
-                    <FooterLink to={'/about'}>About</FooterLink>
-                    <FooterLink to={'/'}>Service</FooterLink>
-                    <FooterLink to={'/gallery'}>Gallery</FooterLink>
+        <FooterWrapper>
+            <LinkList>
+                <LinkColumn>
+                    <LinkTitle>Phone number</LinkTitle>
+                    <PhoneNum>+2560000001</PhoneNum>
+                    <LinkTitle>Twitter</LinkTitle>
+                    <LinkItem href="https://twitter.com/Derickzihalirw5">Derickzihalirw5</LinkItem>
+                    <LinkTitle>Email</LinkTitle>
+                    <LinkItem href="mailto:derickzihalirwa07@gmail.com">derickzihalirwa07@gmail.com</LinkItem>
+                </LinkColumn>
+                <LinkColumn>
+                </LinkColumn>
+            </LinkList>
+            <SocialIconsContainer>
 
-                </FooterLinkItems>
-
-
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>Contacts</FooterLinkTitle>
-                        <FooterLink to={'/'}>Network</FooterLink>
-                        <FooterLink to={'/'}>Our Members</FooterLink>
-                        <FooterLink to={'/'}>Communities</FooterLink>
-                        <FooterLink to={'/'}>Project</FooterLink>
-
-                    </FooterLinkItems>
+                <SocialContainer>
 
 
-                    <FooterLinkItemsContact>
-                        <h1>+2567594042</h1>
-                        <p>Konge Kalonge Supermaket/Kampala Uganda</p>
-                        <p>derickzihalirwa07@gmail.com</p>
+                    <SocialIcons href="https://github.com/Derick1530">
+                        <AiOutlineInstagram size="3rem" />
+                    </SocialIcons>
+                    <SocialIcons href="https://ug.linkedin.com/in/derick-zihalirwa-0b91691a6">
+                        <AiFillLinkedin size="3rem" />
+                    </SocialIcons>
+                    <SocialIcons href="https://github.com/Derick1530">
+                        <AiFillFacebook size="3rem" />
+                    </SocialIcons>
+                </SocialContainer>
 
+            </SocialIconsContainer>
+            <CompanyContainer>
+                <Slogan>Derick © 2021</Slogan>
 
-
-                    </FooterLinkItemsContact>
-                </FooterLinksWrapper >
-
-            </FooterLinksContainer>
-            <img src={img} alt="footer" />
-        </FooterContainer>
-
-
-    )
-}
+            </CompanyContainer>
+        </FooterWrapper>
+    );
+};
 
 export default Footer;

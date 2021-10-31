@@ -19,23 +19,6 @@ h2{
 
 }
 `;
-export const BuildinImage = styled.img`
-width: 30%;
-`;
-
-export const BuildingContainer = styled.div`
-width: 90%;
-position: relative;
-display: flex;
-
-
-p{
-    font-size: 16px;
-    font-weight: 300;
-}
-`;
-
-
 export const SliderContainer = styled.div`
 
 padding: 12px;

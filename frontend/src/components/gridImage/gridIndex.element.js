@@ -2,7 +2,8 @@ import { style } from "@mui/system";
 import styled from "styled-components";
 
 export const Container = styled.section`
-width: 80%;
+width: 100%;
+max-width: 1040px;
 margin: 0 auto;
 @media screen and (max-width:876px){
 width: 90%;
@@ -14,6 +15,7 @@ width: 90%;
 export const ImageSrc = styled.img`
 
     margin-top:100px;
+    max-width: 700px;
     max-height: 400px;
     @media screen and (max-width:768px){
     margin:0;
@@ -84,15 +86,15 @@ font-family: 'Josefin Sans', sans-serif;
 }
 }
 p{
-    width: 500px;
+    width: 650px;
     padding: 14px;
     margin-left: 2rem;
-    font-size:17px;
+    font-size:30px;
     font-family: 'Questrial', sans-serif;
 
     @media screen and (max-width:769px){
         width: 300px;
-        font-size: 12px;
+        font-size: 16px;
     /* display: none; */
 }
 }

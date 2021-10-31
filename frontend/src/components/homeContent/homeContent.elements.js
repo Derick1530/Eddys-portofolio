@@ -1,21 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-height: 100vh;
 width: 80%;
+
 margin: 0 auto;
 @media screen and (max-width:768px){
-    width: 95%;
+    background-color: black;
+    width: 100%;
+    
     height: 100%;
 }
 
 `;
 export const WrapperElement = styled.div`
 margin:3rem auto; 
+width: 100%;
+max-width: 1040px;
 padding: 12px;
 color: #4d4d4dde;
 @media screen and (max-width:768px){
     margin:10px auto;
+    color:white;
 }
 `;
 
@@ -65,9 +70,10 @@ font-family: 'Josefin Sans', sans-serif;
 }
 }
 p{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Questrial', sans-serif;
     text-align: left;
-    font-size: 25px;
+    font-size: 35px;
+
     margin: 5rem auto;
     @media screen and (max-width:768px){
     font-size: 14px;

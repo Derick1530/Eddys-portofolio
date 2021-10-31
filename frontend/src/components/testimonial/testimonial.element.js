@@ -4,18 +4,26 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 z-index: 100;
-width: 80%;
-margin: 0 auto;
-height: 100vh;
+width: 100%;
+margin: 0 auto 3rem;
+box-sizing: content-box;
+
 background-color: #F1EFEE;
 `;
 export const ContainerWrapper = styled.div`
-@media screen and (max-width:986px){
-  
+width: 100% ;
+margin:0 auto;
+max-width: 1040px;
+@media screen and (max-width:768px){
+  margin: 0 auto 1rem;
 }
 `;
 
 export const CardWrapper = styled.div`
+padding-left: 2rem;
+@media screen and (max-width:768px){
+  padding-left: 1rem;
+}
 `;
 
 export const Card = styled.div`
@@ -26,7 +34,7 @@ box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
 padding: 33px;
 
 p{ 
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Serif', serif;
     word-wrap: break-word;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -35,8 +43,9 @@ p{
    
     
 };
-@media screen and (max-width:986px){
+@media screen and (max-width:768px){
   padding: 12px;
+
 }
 
 `;
@@ -45,7 +54,7 @@ width: 80px;
 margin:0 auto;
 margin-bottom: 2rem ;
 border-bottom: 4px solid rgba(0,0,0,0.2);
-@media screen and (max-width:986px){
+@media screen and (max-width:768px){
   width: 80px;
 }
 `;
@@ -54,7 +63,7 @@ width: 100%;
 height: 5rem;
 border-radius: 50%;
 object-fit:cover;
-@media screen and (max-width:986px){
+@media screen and (max-width:768px){
  height:5rem ;
 }
 `;
@@ -73,20 +82,21 @@ padding-top: 12px;
 h2{
   font-family: 'Cinzel', serif;
     white-space: nowrap; 
-    font-size: 23px;
+    font-size: 19px;
     font-weight: 500;
     text-overflow: clip;
-    @media screen and (max-width:986px){
+    @media screen and (max-width:768px){
         font-size: 14px;
     font-weight: bold;
 };    
 }
 p{
     white-space: nowrap; 
-    font-family: 'Cinzel', serif;
-    margin-bottom: 20px;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 18px;
+    font-size:14px;
     text-overflow: clip;
-    @media screen and (max-width:986px){
+    @media screen and (max-width:768px){
         font-size: 12px;
         font-weight: bold;
     }
@@ -94,10 +104,14 @@ p{
 }
 `;
 export const ImageStart = styled.img`
-width: 100px;
-height: 20px;
-@media screen and (max-width:986px){
-    width:78px;
-    height: 16px;
+width: 70px;
+height: 17px;
+margin-top: 20px;
+@media screen and (max-width:768px){
+    width:80px;
+    height: 22px;
+
+    border:1px solid black;
+    margin-right: 3rem;
 }
 `;

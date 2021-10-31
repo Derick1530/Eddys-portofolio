@@ -11,44 +11,9 @@ html,body{
     overflow-x:hidden;
 }
 
-.slick-prev,.slick-next{
-    display: flex;
-    width: 70px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-
-    @media screen and (max-width:786px){
-        width: 20px;
-        height: 50px;
-    };
-}
-
-.slick-next{
-    right: 0;
-    border-radius: 20px 0px 0px 20px ;
-}
-.slick-next:hover{
-    background-color: black;
-}
-.slick-prev{
-    border-radius: 0px 20px 20px 0px ;
-    left: 0;
-}
-.slick-prev:hover{
-    background-color: black;
-}
 .slick-prev::before,
 .slick-next::before{
     display: none;
-}
-.custom-indictor {
-    bottom: -45px;
-
-}
-.custom-indictor:hover{
-border:1px solid black;
 }
 
 .my-masonry-grid {
@@ -94,6 +59,7 @@ border:1px solid black;
 // `;
 
 export const Button = styled(Link)`
+
 background: ${({ primary }) => (primary ? '#000d1a' : 'CD853F')};
 white-space:non-wrap;
 outline:none;

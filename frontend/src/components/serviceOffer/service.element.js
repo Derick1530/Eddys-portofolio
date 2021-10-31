@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 width: 100%;
+margin:0 auto;
+max-width: 1040px;
 padding:30px;
 
 
@@ -19,12 +21,12 @@ grid-template-columns: repeat(2,1fr);
 export const ElementContainer = styled.div`
 align-items: center;
 margin: 12px auto;
-width: 99%;
+width: 100%;
 
 
 
 @media screen and (max-width:668px){
-    width:85%;
+    width:100%;
     }
 
 `;
@@ -46,6 +48,8 @@ font-family: 'Josefin Sans', sans-serif;
 };
 p{
     font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
 };
 
 
@@ -85,7 +89,7 @@ h1{
 };
 p{
     font-family: 'Hind Siliguri', sans-serif;
-    font-size: 14px;
+    font-size: 19px;
     padding-top: 22px;
 
     @media screen and (max-width:768px){      
@@ -105,7 +109,7 @@ export const ElementCom = styled.div`
 padding:5px;
 @media screen and (min-width:768px){     
     margin:0 auto;
-width: 70%;
+width: 100%;
 
 }
 

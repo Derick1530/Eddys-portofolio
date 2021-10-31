@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Title } from '../serviceOffer/service.element'
 import Slider from 'react-slick'
 
 import { Container, ImageContainer, Image, Details, ImageStart, ContainerWrapper, Footer, CardWrapper, Card, Foward, Next } from './testimonial.element'
 import GetWidth from './getWidth'
 const Testimonials = ({ data }) => {
-    const [resWidth, setResWidth] = useState(3);
+
 
     const getWindowsWidtHeight = GetWidth();
     const settings = {
@@ -21,7 +21,7 @@ const Testimonials = ({ data }) => {
         <Container>
             <Title>
                 <p >TESTIMONIALS</p>
-                <h1>What People Say About Us</h1>
+                <h1>What People Say About my Work</h1>
             </Title>
             <ContainerWrapper>
 
