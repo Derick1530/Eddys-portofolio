@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 html,body{
     background-color:#f5f4f2;
     overflow-x:hidden;
+    
 }
 
 .slick-prev::before,
@@ -34,9 +35,34 @@ html,body{
   margin-bottom: 30px;
 }
 
-.image {
-  display: block;
-  width: 100%;
+.image0 {
+  clip-path: polygon(46% 20%, 100% 0, 100% 100%, 0 77%, 11% 41%);
+
+  
+}
+.image1 {
+  clip-path: polygon(51% 16%, 100% 44%, 100% 93%, 35% 71%, 0 98%, 0 51%, 0 0);
+
+  
+}
+.image2 {
+  clip-path: polygon(60% 12%, 100% 0, 100% 100%, 44% 70%, 0 85%, 0 36%, 24% 36%);
+  
+}
+.image3 {
+  clip-path: polygon(59% 25%, 100% 28%, 100% 100%, 43% 61%, 0 64%, 0 13%, 26% 1%);
+  
+}
+.image4 {
+  clip-path: polygon(0 0, 70% 15%, 100% 59%, 0 90%);
+
+}
+.image5 {
+  clip-path: polygon(52% 29%, 100% 11%, 100% 70%, 71% 57%, 0 75%, 0 38%, 17% 19%);
+  
+}
+.image6 {
+  clip-path: polygon(61% 25%, 100% 11%, 100% 84%, 43% 56%, 0 66%, 0 6%, 23% 16%);
 }
 
 

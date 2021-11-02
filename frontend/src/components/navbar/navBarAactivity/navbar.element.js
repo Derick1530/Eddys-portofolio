@@ -6,12 +6,13 @@ export const Nav = styled.nav`
     display: flex;
     transition:0.4s;
     background:${({ isScroll }) => (isScroll ? '#2C271C' : 'transparent')};
-    justify-content:space-between;
+    justify-content:left;
     padding:1rem 2rem;
     z-index:100;
     position:${({ primary }) => (primary ? 'inline' : 'fixed')};
     width:100%;
     @media screen and (max-width:768px){
+        justify-content: right;
         height:60px;
         background:${({ isScroll }) => (isScroll ? '#2C271C' : 'transparent')};
     }
@@ -24,31 +25,24 @@ align-items:center;
 height:100%;
 cursor:pointer;
 text-decoration:none;
-padding: 0 1rem;
+padding: 0 10px;
 `
 
-export const Logo = styled(Link)`
-${NavLink}
-color:white;
-font-style:italic;
-`
 export const NavMenuLinks = styled(Link)`
 ${NavLink};
+
+font-size: 20px;
+margin-top: ${({ isScroll }) => (isScroll ? '0' : '3rem')};
+margin-left: ${({ isScroll }) => (isScroll ? '0' : '3rem')};
+font-family: 'Arima Madurai', cursive;
 &:hover{
-    border-bottom: 2px solid black;
-    transition:0.2s;
+    color:black;
+    transition: 0.20s ease-in-out;
 
 };
 
 `;
-export const NavBtn = styled.div`
-display:flex;
-align-items:center;
-margin-right:24px;
-@media screen and (max-width:768px){
-    display:none;
-}
-`;
+
 export const MenuBars = styled(FaBars)`
 display:none;
 cursor:pointer;
@@ -61,10 +55,6 @@ cursor:pointer;
 `;
 export const NavMenu = styled.div`
 display:flex;
-
-align-items:center;
-margin-right: -48px;
-
 
 @media screen and (max-width:768px){
     display:none;

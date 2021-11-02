@@ -2,6 +2,10 @@ import image1 from "../images/slider01.jpg"
 import image2 from "../images/slider02.jpg"
 import image3 from "../images/slider03.jpg"
 import image4 from "../images/Mask-1.jpg"
+import new4 from "../images/new4.jpg"
+import new5 from "../images/ha1.jpg"
+import new6 from "../images/ok1.jpg"
+import new7 from "../images/new2.jpg"
 
 import bed from "../images/bed.jpg"
 import chair from "../images/chair.jpg"
@@ -11,44 +15,51 @@ import bed2 from "../images/bed2.jpg"
 
 
 import grid1 from "../images/3.jpg";
-import grid2 from "../images/1.jpg"
-import grid3 from "../images/4.jpg";
+import grid2 from "../images/ha1.jpg"
+import grid3 from "../images/ok1.jpg";
 
 
 
 
-export const dataImageHome = [image4];
+export const dataImageHome = [new4];
 
 export const HomeGrid = [
     {
         title: 'City Living With Country Character.',
         location: 'Kampala',
-        image: image1
+        image: image1,
+        classename: 'image0'
     },
     {
-        title: 'Victorian Villa.',
+        title: 'Modern Living in Tight Urban Spaces.',
         location: 'Kampala',
-        image: image2
+        image: image2,
+        classename: 'image1'
     },
     {
         title: 'Riverside Apartment With Stunning Views.',
         location: 'Kampala',
-        image: grid3
+        image: new7
+        , classename: 'image2'
     },
     {
         title: 'Old World Meets New World Appartment.',
         location: 'Kampala',
-        image: grid2
+        image: new5
+        , classename: 'image3'
     },
     {
         title: 'Modern Living in Tight Urban Spaces',
         location: 'Kampala',
-        image: grid1
+        image: new6
+        , classename: 'image4'
     },
+
     {
         title: 'Modern Living in Tight Urban Spaces',
         location: 'Kampala',
-        image: image4
+        image: table,
+        classename: 'image6'
     },
 ]
 

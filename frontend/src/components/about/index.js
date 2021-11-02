@@ -5,8 +5,8 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import { Hero, ImageContainer } from "./about.element";
-
+import { Hero, Element, ImageContainer, Container, Item } from "./about.element";
+import { HeroName } from '../contact/contact.element';
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -21,14 +21,14 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '1rem' }} />}
         {...props}
     />
 ))(({ theme }) => ({
     backgroundColor:
         theme.palette.mode === 'dark'
             ? 'rgba(255, 255, 255, .05)'
-            : 'rgba(0, 0, 0, .03)',
+            : 'rgba(0, 0, 0, .0.3',
     flexDirection: 'row-reverse',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
         transform: 'rotate(90deg)',
@@ -43,7 +43,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-const About = ({ data }) => {
+const About = ({ content }) => {
 
 
     const [expanded, setExpanded] = React.useState('panel1');
@@ -53,48 +53,58 @@ const About = ({ data }) => {
     };
 
     return (
-        <div>
+        <Container>
 
             <Hero>
-                {data.map((item, index) => (
+                {content.map((item, index) => (
 
                     <ImageContainer src={item} />
                 ))}
             </Hero>
+            <Item>
+                <HeroName to="/">
+                    <h3 >Derick Zihalirwa</h3>
+                    <p>Architect</p>
+                </HeroName>
+                <Element>
 
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>What is usually needed for a project? </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                    <Typography>Who will be on our project?</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
-                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                    <Typography>Can we offer own design?</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <Typography>
+                    <h2>Question People Ask</h2>
 
-                        Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
+                    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+                            <Typography>What is usually needed for a project? </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+                            <Typography>Who will be on our project?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+                            <Typography>Can we offer own design?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
 
-        </div>
+                                Whether the project is a new home or a residential addition or significant remodel, you will need governing agency approval and permits. This is to ensure that the new structures will be safe to use.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                </Element>
+            </Item>
+
+        </Container>
     );
 }
 export default About;

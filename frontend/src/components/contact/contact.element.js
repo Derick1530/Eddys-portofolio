@@ -1,13 +1,37 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+export const MainContainer = styled.div`
+    width: 100%;
+    height: 100vh;
+    &::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100vh;
+    bottom:0vh;
+    left:0;
+    overflow:hidden;
+    opacity:0.9;
+background: linear-gradient(3deg, rgba(255,255,255,0) 60%, rgba(0,0,0,1) 100%);
+
+};
+`;
+
 export const FooterSubscribe = styled.section`
 display:flex;
-width: 80%;
+height: 100vh;
 margin:0 auto;
-max-width: 1040px;
-
+left: 0;
+bottom: 0;
+right: 0;
+top: 0;
 justify-content: center;
-background-color:  #bdb8b2;
-
+backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+position: absolute;
 flex-direction: column;
 color:#fff;
 @media screen and (max-width: 960px){
@@ -22,12 +46,12 @@ font-size:14px;
 padding: 20px;
 text-align: center;
 h1{
-    color: #0D121B;
+    color: white;
     font-family: 'Noto Serif', serif;
     margin-bottom: 12px;
 }
 p{
-    font-family: 'Noto Serif', serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 20px;
     margin: 0 auto;
     max-width: 700px;
@@ -35,7 +59,7 @@ p{
 `
     ;
 export const FooterSubText = styled.div`
-font-size:20px;
+font-size:16px;
 `;
 export const Button = styled.button`
 background:${({ primary }) => (primary ? '#0D121B' : '#212D45')};
@@ -58,6 +82,44 @@ margin-top:12px;
     margin:0 auto;
 
 }
+`;
+export const ImageCont = styled.img`
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+`;
+
+export const HeroName = styled(Link)`
+z-index:100;
+text-decoration: none;
+user-select:none;
+position: absolute;
+top:3rem;
+color:white;
+font-family: 'Arima Madurai', cursive;
+text-decoration: none;
+right: 3rem;
+padding: 20px;
+h3{
+    font-size: clamp(1.5rem, 2.5vw,3rem);
+    font-weight: 400;
+    text-transform:uppercase;
+
+   
+};
+
+p{
+    font-size: clamp(0.3rem, 2.5vw,1rem);
+    font-weight: 400;
+    margin-top:-0.5rem;
+    text-transform:uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+};
+@media screen and (max-width:779px){
+    top:0;
+    right:0;
+    }
 `;
 
 export const TextArea = styled.textarea`

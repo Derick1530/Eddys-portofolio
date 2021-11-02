@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
+
+	
 background-color: #7b6757;
 	width: 100%;
   max-width: 1040px;
@@ -104,6 +106,8 @@ export const Slogan = styled.p`
 `
 
 export const SocialContainer = styled.div`
+
+
 	display: flex;
   align-items: center;
 
@@ -116,6 +120,7 @@ export const SocialContainer = styled.div`
 
 
 export const LinkList = styled.ul`
+
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
 	grid-template-columns: repeat(3, minmax(85px, 220px));

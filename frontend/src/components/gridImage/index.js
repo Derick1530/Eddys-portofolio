@@ -16,7 +16,7 @@ const GridImage = () => {
 
             <WrapperImages>
 
-                <Masonry imageUrls={HomeGrid} columnCount="2" gap="5" >
+                <Masonry imageUrls={HomeGrid} columnCount="2" gap="1" >
                 </Masonry>
             </WrapperImages>
 

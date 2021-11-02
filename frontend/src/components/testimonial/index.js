@@ -1,15 +1,14 @@
 import React from 'react'
-import { Title } from '../serviceOffer/service.element'
 import Slider from 'react-slick'
 
-import { Container, ImageContainer, Image, Details, ImageStart, ContainerWrapper, Footer, CardWrapper, Card, Foward, Next } from './testimonial.element'
+import { Container, Title, ImageContainer, Image, Details, ImageStart, ContainerWrapper, Footer, CardWrapper, Card, Foward, Next } from './testimonial.element'
 import GetWidth from './getWidth'
 const Testimonials = ({ data }) => {
 
 
     const getWindowsWidtHeight = GetWidth();
     const settings = {
-        dots: true,
+
         autoplay: true,
         dotsClass: "slick-dots custom-indictor",
         infinite: true,
@@ -34,6 +33,7 @@ const Testimonials = ({ data }) => {
 
                                 <ImageContainer>
                                     <Image src={item.image} />
+                                    <ImageStart src={item.starts} />
                                 </ImageContainer>
                                 <p>{item.description}</p>
                                 <Footer>
@@ -41,7 +41,7 @@ const Testimonials = ({ data }) => {
                                         <h2>{item.name}</h2>
                                         <p>CEO Innovation Squad</p>
                                     </Details>
-                                    <ImageStart src={item.starts} />
+
                                 </Footer>
                             </Card>
                         </CardWrapper>

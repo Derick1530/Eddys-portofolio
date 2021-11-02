@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 
 
@@ -31,8 +32,10 @@ left:0;
 width:100%;
 height:100%;
 display:flex;
+transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 align-items:center;
 justify-content:center;
+
 &::before{
     content:'';
     position:absolute;
@@ -42,11 +45,8 @@ justify-content:center;
     bottom:0vh;
     left:0;
     overflow:hidden;
-    opacity:0.4;
-    background:linear-gradient(0deg,
-        rgba(0,0,0,0.2) 0%,
-        rgba(0,0,0,0.2) 50%,
-        rgba(0,0,0,0.6) 100%,);
+    opacity:0.7;
+    background: linear-gradient(207deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7160390378548895) 58%,rgba(0,0,0,1) 88%);
 };
 `;
 export const HeroImage = styled.img`
@@ -57,68 +57,80 @@ width:100vw;
 height:100vh;
 object-fit:cover;
 `;
-export const HeroContent = styled.div`
-position:relative;
-display: flex;
-width: 90%;
-justify-content: center;
-align-items: center;
-z-index:10;
-/* height: 40vh; */
-max-width:1600px;
-width:calc(100%-100px);
-color:#fff;
-h1 {
-    width: 80%;
-    font-family: 'Oswald', sans-serif;
-    font-size: clamp(0.3rem,8vw,4rem);
-    font-weight: 400;
-    text-transform:uppercase;
-    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-    text-align:left;
-    margin-bottom:0.8rem;
 
-};
-p{
-    
-    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-    font-size: clamp(1rem,1vw,2rem);
-};
-@media screen and (max-width:768px){
-    display: inline;
-    width: 90%;
-}
-`;
-export const ButtonContact = styled.button`
+export const HeroName = styled(Link)`
+z-index:100;
+text-decoration: none;
+user-select:none;
 position: absolute;
-bottom: -5rem;
+bottom:3rem;
+color:white;
+font-family: 'Arima Madurai', cursive;
+text-decoration: none;
 left: 3rem;
 padding: 20px;
-`;
+h3{
+    font-size: clamp(1.5rem, 2.5vw,3rem);
+    font-weight: 400;
+    text-transform:uppercase;
 
+   
+};
+
+p{
+    font-size: clamp(0.3rem, 2.5vw,1rem);
+    font-weight: 400;
+    margin-top:-0.5rem;
+    text-transform:uppercase;
+    letter-spacing: 12px;
+    text-align: center;
+};
+@media screen and (max-width:779px){
+    left:0;
+    bottom: 6rem;
+    }
+`;
+export const TitleImage = styled(Link)`
+z-index:100;
+text-decoration: none;
+font-size: clamp(0.3rem, 6vw,2rem);
+position: absolute;
+bottom:0;
+color:white;
+font-family: 'Arima Madurai', cursive;
+text-decoration: none;
+right: 1rem;
+padding: 20px;
+
+`;
 export const SliderButtons = styled.div`
 position:absolute;
 bottom:50px;
 right:25px;
 display:flex;
 z-index:10;
+@media screen and (max-width:779px){
+    display: none;
+    }
 `;
 
 export const arrowButtons = css`
-width:50px;
+opacity:0;
+width:100px;
 height:50px;
 color:#fff;
 cursor:pointer;
-background:#000d1a;
+
 padding:10px;
-border-radius:50px;
+
 margin-right:1rem;
 user-select:none;
-transition:0.3s;
+transition:0.3s ease-in-out;
 
 &:hover{
-    background:#cd853f;
-    transform:scale(1.05);
+    opacity: 1;
+    color:#cd853f;
+    transform:scale(1.78);
 }
 
 `;

@@ -16,7 +16,7 @@ top:0;
 left:${({ isOpen }) => (isOpen ? '0' : '-100%')};
 transition: all 0.1s ease;
 opacity:1;
-top:0;
+
 `;
 
 const Icon = styled.div`
@@ -53,6 +53,7 @@ padding-top:12px;
 color: #fff;
 justify-content:center;
 align-items:center;
+font-family: 'Arima Madurai', cursive;
 text-decoration:none;
 list-style:none;
 color:#fff;

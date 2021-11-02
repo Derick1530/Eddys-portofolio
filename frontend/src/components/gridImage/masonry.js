@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
-import { ImageContainer, ImagesCont, Button, Location, ImageSrc } from "./gridIndex.element"
+import { ImageContainer, ImagesCont, TittleImage, Button, Location, ImageSrc } from "./gridIndex.element"
 
 
 const Masonry = (props) => {
     return (
         <>
-            <ImageContainer >
-                {props.imageUrls.map((img, i) =>
-                    <>
-                        <ImagesCont>
-                            <ImageSrc src={img.image} alt='gallery' key={i} className="image" style={{ padding: props.gap / 1 }} />
-                            <Location>
-                                <h2>{img.title}</h2>
-                                <p>{img.location}</p>
-                            </Location>
-                        </ImagesCont>
-                    </>
-                )}
+            {props.imageUrls.map((img, i) =>
+                <ImageContainer key={i} s >
+                    <ImagesCont className={img.classename} >
+                        <ImageSrc src={img.image} alt='gallery' style={{ padding: props.gap / 1 }} />
 
-            </ImageContainer>
+                    </ImagesCont>
+                    <TittleImage>{img.title}</TittleImage>
+                </ImageContainer>
+
+            )}
+
 
 
         </>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 export const Foward = styled(IoArrowForward)`
 color:white;
+
 width:2rem;
 height: 4rem;
 `;
@@ -11,6 +12,7 @@ width: 2rem;
 height: 4rem;
 `;
 export const Container = styled.div`
+
 height: 100vh;
 position: relative;
 h2{

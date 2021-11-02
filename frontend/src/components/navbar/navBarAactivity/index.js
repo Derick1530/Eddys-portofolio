@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { menuData } from '../../../data/menuData';
 import { Button } from '../../../globalStyles';
 import {
-    Nav, NavLink, Logo, NavMenuLinks, NavBtn, MenuBars, NavMenu
+    Nav, Logo, NavMenuLinks, NavBtn, MenuBars, NavMenu
 
 } from "./navbar.element"
 
@@ -23,23 +23,14 @@ const Navbar = ({ toggle }) => {
 
     return (
         <Nav isScroll={isScroll} >
-            <Logo to='/' >PORTFOLIO</Logo>
             <MenuBars onClick={toggle} />
             <NavMenu>
                 {menuData.map((item, index) => (
-                    <NavMenuLinks to={item.link} key={index}>
+                    <NavMenuLinks isScroll={isScroll} to={item.link} key={index}>
                         {item.title}
                     </NavMenuLinks>
                 ))}
             </NavMenu>
-            <NavBtn>
-                <Button to="/contact" primary='true'>
-                    <Fade bottom>
-                        Contact Us
-                    </Fade>
-
-                </Button>
-            </NavBtn>
         </Nav>
     )
 }
