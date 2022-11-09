@@ -25,7 +25,6 @@ const Home = () => {
       <Hero slides={SliderData} />
       <HomeContent content={dataImageHome} />
       {/* <ProjectBuilt derick={Para} data={dataImage} /> */}
-
       <GridImage content={dataGridImage} />
       <Testimonials data={TestimonialData} />
       <Footer />
