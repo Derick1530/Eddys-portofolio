@@ -72,9 +72,7 @@ padding: 20px;
 h3{
     font-size: clamp(1.5rem, 2.5vw,3rem);
     font-weight: 400;
-    text-transform:uppercase;
-
-   
+    text-transform:uppercase;   
 };
 
 p{
@@ -103,6 +101,7 @@ right: 1rem;
 padding: 20px;
 
 `;
+
 export const SliderButtons = styled.div`
 position:absolute;
 bottom:50px;
@@ -134,6 +133,7 @@ transition:0.3s ease-in-out;
 }
 
 `;
+
 export const PrevArrow = styled(IoArrowBack)`
 ${arrowButtons}`;
 export const NextArrow = styled(IoArrowForward)`
